@@ -59,7 +59,7 @@ winget install ffmpeg
 Ideal for streaming chunks directly to transcription APIs like Whisper or Google Cloud without saving them to disk.
 
 ```python
-from splitter import Splitter
+from audio_splitter_vad.splitter import Splitter
 
 audio_splitter = Splitter()
 
@@ -80,7 +80,7 @@ for chunk in audio_splitter.split(
 Quickly split a single massive audio file into hundreds of `.wav` chunks on your hard drive.
 
 ```python
-from splitter import Splitter
+from audio_splitter_vad.splitter import Splitter
 
 audio_splitter = Splitter()
 
@@ -103,7 +103,7 @@ print(f"Successfully exported {len(saved_files)} chunks.")
 If you have a folder containing thousands of audio files, use multiprocessing instead of multithreading. This assigns an isolated VAD engine to every CPU core for maximum throughput.
 
 ```python
-from batch_split import batch_process_directory
+from audio_splitter_vad.batch_split import batch_process_directory
 
 batch_process_directory(
     input_folder="./raw_podcasts",
@@ -129,7 +129,7 @@ Example:
 
 ```python
 import webrtcvad
-from splitter import Splitter
+from audio_splitter_vad.splitter import Splitter
 
 # Less aggressive filtering
 custom_vad = webrtcvad.Vad(1)
