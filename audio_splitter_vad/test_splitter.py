@@ -3,7 +3,7 @@ import os
 # os.add_dll_directory(r"C:/ffmpeg_windows/bin")
 import shutil
 
-from splitter import Splitter
+from audio_splitter_vad.splitter import Splitter
 
 
 def run_tests():

@@ -3,7 +3,7 @@ import os
 from concurrent.futures import ProcessPoolExecutor, as_completed
 
 # Assuming your Splitter class is saved in a file called audio_tools.py
-from splitter import Splitter
+from audio_splitter_vad.splitter import Splitter
 
 
 def process_single_file(

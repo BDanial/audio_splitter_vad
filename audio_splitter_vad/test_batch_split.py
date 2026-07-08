@@ -2,7 +2,7 @@ import glob
 import os
 import shutil
 
-from batch_split import batch_process_directory
+from audio_splitter_vad.batch_split import batch_process_directory
 
 
 def run_batch_tests():
