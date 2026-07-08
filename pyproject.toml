@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "audio-splitter-vad"
+version = "0.1.0"
+authors = [
+  { name="Danial Baledi", email="baledi.danial@gmail.com" },
+]
+description = "A fast, multithreaded audio silence remover and chunk slicer."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Multimedia :: Sound/Audio :: Speech",
+]
+dependencies = [
+    "pydub>=0.25.1",
+    "setuptools<70",
+    "webrtcvad>=2.0.10",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/bdanial/audio-splitter-vad"
+"Bug Tracker" = "https://github.com/yourusername/audio-splitter-vad/issues"
+
+[tool.setuptools.packages.find]
+exclude = ["test_batch*", "test_output*", "training*"]

@@ -1,0 +1,26 @@
+# Specific User Exclusions
+.venv/
+.venv
+training/
+__pycache__/
+training/
+
+# Byte-compiled / optimized / DLL files
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# IDEs and environments
+.vscode/
+.idea/
+.env
+
+# Testing / coverage
+.pytest_cache/
+.coverage
+htmlcov/
