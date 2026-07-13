@@ -105,11 +105,12 @@ If you have a folder containing thousands of audio files, use multiprocessing in
 ```python
 from audio_splitter_vad.batch_split import batch_process_directory
 
-batch_process_directory(
-    input_folder="./raw_podcasts",
-    output_folder="./processed_datasets",
-    strip_silence=True,
-)
+if __name__ == "__main__":
+    batch_process_directory(
+        input_folder="./raw_podcasts",
+        output_folder="./processed_datasets",
+        strip_silence=True,
+    )
 ```
 
 ---
